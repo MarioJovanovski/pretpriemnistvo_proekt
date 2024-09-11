@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brunch - Food Ordering Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="app-name-button"><img src="img\logo.png" class="mindful"></a>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for food...">
+            <button type="submit">Search</button>
+        </div>
+        <div class="profile-outline"></div>
+            <a class="profile-button" href="profile.html">
+                <div>John'Profile</div>
+                <img src="img\john-doe.jpg"  class="small-img">
+            </a>          
+        </div>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="brunch.html">Brunch</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="content">
+            <h2>Brunch Options</h2>
+
+            <!-- Allergen Filter -->
+            <!-- Allergen Filter -->
+                <div class="allergen-filter">
+                    <h3>Filter by Allergen</h3>
+                    <div id="allergenForm">
+                        <button type="button" class="allergen-button" data-allergen="crustaceans">Crustaceans</button>
+                        <button type="button" class="allergen-button" data-allergen="eggs">Eggs</button>
+                        <button type="button" class="allergen-button" data-allergen="fish">Fish</button>
+                        <button type="button" class="allergen-button" data-allergen="peanuts">Peanuts</button>
+                        <button type="button" class="allergen-button" data-allergen="soybeans">Soybeans</button>
+                        <button type="button" class="allergen-button" data-allergen="milk">Milk</button>
+                        <button type="button" class="allergen-button" data-allergen="almonds">Almonds</button>
+                        <button type="button" class="allergen-button" data-allergen="hazelnuts">Hazelnuts</button>
+                        <button type="button" class="allergen-button" data-allergen="walnuts">Walnuts</button>
+                        <button type="button" class="allergen-button" data-allergen="cashews">Cashews</button>
+                        <button type="button" class="allergen-button" data-allergen="pecan_nuts">Pecan nuts</button>
+                        <button type="button" class="allergen-button" data-allergen="brazil_nuts">Brazil nuts</button>
+                        <button type="button" class="allergen-button" data-allergen="pistachio_nuts">Pistachio nuts</button>
+                        <button type="button" class="allergen-button" data-allergen="macadamia_nuts">Macadamia nut</button>
+                        <button type="button" class="allergen-button" data-allergen="celery">Celery</button>
+                        <button type="button" class="allergen-button" data-allergen="mustard">Mustard</button>
+                        <button type="button" class="allergen-button" data-allergen="sesame_seeds">Sesame seeds</button>
+                        <button type="button" class="allergen-button" data-allergen="sulphur_dioxide">Sulphites</button>
+                        <button type="button" class="allergen-button" data-allergen="lupin">Lupin</button>
+                        <button type="button" class="allergen-button" data-allergen="molluscs">Molluscs</button>
+                    </div>
+                    <button class="apply-filter-button" type="button" onclick="filterAllergens()">Apply Filter</button>
+                </div>
+
+
+            <section class="food-cards">
+                
+                <div class="card" data-allergens="almonds soybeans">
+                    <a href="avocado-toast.html" style="text-decoration: none; color: inherit;">
+                        <img src="img\avocado-toast.jpg" alt="Avocado Toast">
+                        <h3>Avocado Toast</h3>
+                        <div class="rating">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9734;</span>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                <!-- Add more brunch cards as needed, with appropriate allergens listed in data-allergens -->
+                <div class="card" data-allergens="gluten dairy">
+                    <img src="img\pancake.jpg" alt="Pancakes">
+                    <h3>Healthy Pancakes</h3>
+                    <div class="rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9734;</span>
+                    </div>
+                </div>
+                
+                <div class="card" data-allergens="eggs milk">
+                    <img src="img\How-to-Make-an-Omelette-17.webp" alt="Omelette">
+                    <h3>Omelette</h3>
+                    <div class="rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9734;</span>
+                        <span>&#9734;</span>
+                        <span>&#9734;</span>
+                        
+                        
+                    </div>
+                    
+                </div>
+
+                <!-- New Brunch Cards -->
+                <div class="card" data-allergens="eggs milk">
+                    <img src="img\Turkish-Eggs-9.jpg" alt="Spiced Spinach Eggs">
+                    <h3>Spiced Spinach Eggs</h3>
+                    <div class="rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9734;</span>
+                    </div>
+                    
+                </div>
+        
+                <div class="card" data-allergens="eggs dairy">
+                    <img src="img\Shakshuka-Eggs-1.jpg" alt="One Pan Eggs with Tomatoes Peppers & Yogurt">
+                    <h3>One Pan Eggs with Tomatoes Peppers & Yogurt</h3>
+                    <div class="rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9734;</span>
+                    </div>
+                    
+                </div>
+                <div class="card" data-allergens="eggs soybeans">
+                    <img src="img\Quinoa-Breakfast-Bowl.jpg" alt="Avocado & Black Bean Eggs">
+                    <h3>Avocado & Black Bean Eggs</h3>
+                    <div class="rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9734;</span>
+                    </div>
+                    
+                </div>
+                <div class="card" data-allergens="eggs dairy">
+                    <img src="img\Persian-Omelette-01.jpg" alt="Herb Omelette with Fried Tomatoes">
+                    <h3>Herb Omelette with Fried Tomatoes</h3>
+                    <div class="rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9734;</span>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function filterAllergens() {
+    const selectedAllergens = [];
+    
+    // Collect selected allergens
+    document.querySelectorAll('.allergen-button.selected').forEach(button => {
+        selectedAllergens.push(button.getAttribute('data-allergen'));
+    });
+
+    const cards = document.querySelectorAll('.card');
+    
+    cards.forEach(card => {
+        const cardAllergens = card.getAttribute('data-allergens').split(' ');
+        const hasAllergen = selectedAllergens.some(allergen => cardAllergens.includes(allergen));
+        card.style.display = hasAllergen ? 'none' : 'block';
+    });
+}
+
+    // Toggle button selection
+    document.querySelectorAll('.allergen-button').forEach(button => {
+        button.addEventListener('click', () => {
+            button.classList.toggle('selected');
+        });
+    });
+
+    </script>
+</body>
+</html>

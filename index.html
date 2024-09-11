@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="app-name-button"><img src="img\logo.png" class="mindful"></a>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for food...">
+            <button type="submit">Search</button>
+        </div>
+        <div class="profile-outline"></div>
+            <a class="profile-button" href="profile.html">
+                <div>John'Profile</div>
+                <img src="img\john-doe.jpg"  class="small-img">
+            </a>          
+        </div>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="brunch.html">Brunch</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="content">
+            <h1>Welcome to the Food Ordering Website</h1>
+            <p>Select a category from the menu to view the available foods.</p>
+
+            <section class="food-cards">
+                
+                <div class="card" data-allergens="almonds soybeans">
+                    <a href="avocado-toast.html" style="text-decoration: none; color: inherit;">
+                        <img src="img\avocado-toast.jpg" alt="Avocado Toast">
+                        <h3>Avocado Toast</h3>
+                        <p>Category: Brunch</p>
+                    </a>
+                </div>
+                
+                
+                <!-- Add more brunch cards as needed, with appropriate allergens listed in data-allergens -->
+                <div class="card" data-allergens="gluten dairy">
+                    <img src="img\SalmonQuinoaAsparagus-33.webp" alt="Pancakes">
+                    <h3>Grilled Salmon with Quinoa and Asparagus</h3>
+                    <p>Category: Dinner</p>
+                </div>
+                
+                <div class="card" data-allergens="eggs milk">
+                    <img src="img\stuffed-bell-peppers-06.jpg.webp" alt="Omelette">
+                    <h3>Stuffed Bell Peppers</h3>
+                    <p>Category: Lnch</p>
+                </div>
+
+                <!-- New Brunch Cards -->
+                <div class="card" data-allergens="eggs milk">
+                    <img src="img\grilled-chicken-salad-hero.jpg" alt="Spiced Spinach Eggs">
+                    <h3>Grilled Chicken Salad</h3>
+                    <p>Category: Lunch</p>
+                </div>
+                <div class="card" data-allergens="gluten dairy">
+                    <img src="img\pancake.jpg" alt="Healthy Pancakes">
+                    <h3>Healthy Pancakes</h3>
+                    <p>Category: Brunch</p>
+                </div>
+                <div class="card" data-allergens="eggs dairy">
+                    <img src="img\cod.jpg" alt="One Pan Eggs with Tomatoes Peppers & Yogurt">
+                    <h3>Baked Cod with Sweet Potatoes and Green Beans </h3>
+                    <p>Category: Dinner</p>
+                </div>
+                <div class="card" data-allergens="eggs soybeans">
+                    <img src="img\Quinoa-Breakfast-Bowl.jpg" alt="Avocado & Black Bean Eggs">
+                    <h3>Avocado & Black Bean Eggs</h3>
+                    <p>Category: Brunch</p>
+                </div>
+                <div class="card" data-allergens="eggs dairy">
+                    <img src="img\Persian-Omelette-01.jpg" alt="Herb Omelette with Fried Tomatoes">
+                    <h3>Herb Omelette with Fried Tomatoes</h3>
+                    <p>Category: Brunch</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
